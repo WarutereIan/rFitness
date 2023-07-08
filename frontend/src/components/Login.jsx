@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const responseGoogle = (response) => {
-    /* localStorage.setItem("user", JSON.stringify(response.profileObj));
+    localStorage.setItem("user", JSON.stringify(response.profileObj));
 
     const { name, googleId, imageUrl } = response.profileObj;
 
@@ -23,9 +23,7 @@ const Login = () => {
 
     client.createIfNotExists(doc).then(() => {
       navigate("/", { replace: true });
-    }); */
-
-    console.log(response);
+    });
   };
 
   return (
